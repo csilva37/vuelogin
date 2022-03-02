@@ -10,10 +10,10 @@ const loggingOut = () => {
 </script>
 
 <template>
-  <div class="bg-red-800 text-red-200">
+  <div class="bg-teal-800 text-teal-200">
     <div class="container mx-auto flex items-center justify-between">
       <h1 class="tracking-tighter text-3xl font-thin">
-        My <span class="font-normal">Fake Authentication</span>
+        My <span class="font-normal">Real Authenitcation</span>
       </h1>
       <nav>
         <ul class="flex space-x-4 text-xl">
@@ -22,7 +22,7 @@ const loggingOut = () => {
               class="
                 py-8
                 px-4
-                hover:cursor-pointer hover:bg-green-500 hover:text-green-200
+                hover:cursor-pointer hover:bg-cyan-500 hover:text-cyan-200
               "
             >
               Home
@@ -33,7 +33,7 @@ const loggingOut = () => {
               class="
                 py-8
                 px-4
-                hover:cursor-pointer hover:bg-green-500 hover:text-green-200
+                hover:cursor-pointer hover:bg-cyan-500 hover:text-cyan-200
               "
             >
               About
@@ -44,7 +44,7 @@ const loggingOut = () => {
               class="
                 py-8
                 px-4
-                hover:cursor-pointer hover:bg-green-500 hover:text-green-200
+                hover:cursor-pointer hover:bg-cyan-500 hover:text-cyan-200
               "
             >
               Hello
@@ -55,7 +55,7 @@ const loggingOut = () => {
               class="
                 py-8
                 px-4
-                hover:cursor-pointer hover:bg-green-500 hover:text-green-200
+                hover:cursor-pointer hover:bg-cyan-500 hover:text-cyan-200
               "
             >
               Shop
@@ -66,7 +66,7 @@ const loggingOut = () => {
             :to="{ path: '/login', name: 'Login' }"
           >
             <li
-              class="px-4 py-8  hover:cursor-pointer hover:bg-green-500 hover:text-green-800"
+              class="px-4 py-8  hover:cursor-pointer hover:bg-cyan-500 hover:text-cyan-800"
             >
               Login
             </li>
@@ -74,14 +74,14 @@ const loggingOut = () => {
           <div v-else class="flex">
             <router-link :to="{ name: 'Secret' }">
               <li
-                class="px-4 py-8  hover:cursor-pointer hover:bg-green-500 hover:text-green-800"
+                class="px-4 py-8  hover:cursor-pointer hover:bg-cyan-500 hover:text-cyan-800"
               >
                 Secret
               </li>
             </router-link>
             <button @click="loggingOut">
               <li
-                class="px-4 py-8  hover:cursor-pointer hover:bg-green-500 hover:text-green-800"
+                class="px-4 py-8  hover:cursor-pointer hover:bg-cyan-500 hover:text-cyan-800"
               >
                 Logout
               </li>
